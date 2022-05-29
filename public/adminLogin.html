@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Spectra Registration</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script type = 'module' src="main3.js"></script>
+</head>
+
+<body>
+    <div>
+        <button id = "go-back" onclick = "location.href='index.html'">Back</button>
+    </div>
+
+    <div class="login-form" id="login">
+        <input type="text" placeholder="Username" name="uname" id = "uname" required>
+        <label id = 'username-error'></label><br>
+
+        <input type="password" placeholder="Password" name="psw" id = "psw" required>
+        <label id = 'username-error'></label><br>
+        
+        <div id="log-sub">
+            <button id = "log-sub" type="submit">Login</button>
+            <label id = 'incorrect-login' style = 'display: none;'></label><br>
+        </div>
+            
+    </div>
+    
+</body>
+
+</html>

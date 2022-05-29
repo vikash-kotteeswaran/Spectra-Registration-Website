@@ -1,0 +1,731 @@
+@font-face {
+    font-family: google-font;
+    src: url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+}
+
+@font-face {
+    font-family: electric;
+    src: url("./resources/electrical/electrical.ttf");
+}
+
+@font-face {
+    font-family: nebula-hollow;
+    src: url("./resources/nebula_2/Nebula-Hollow.otf");
+}
+
+@font-face {
+    font-family: space-age;
+    src: url("./resources/space_age/space\ age.ttf");
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url("./resources/Orbitron/static/Orbitron-Medium.ttf");
+}
+
+/* Corrections: check with admin button being not working, make the background post submit div even more gloomier or darker, try to add a bar at he end of the website like it was in the iit cse website */
+
+@media only screen and (min-width : 1090px) {
+    body{
+        background-image: url('resources/ring3.gif');
+    }
+}
+
+@media only screen and (max-width : 1090px) {
+    body{
+        background-image: url('resources/ring4p.gif');
+    }
+}
+
+body {
+    background-size: cover;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(3px);
+}
+
+h2#SpectraReg {
+    font-family: space-age;
+    opacity: 80%;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 2% 0%;
+    margin-bottom: 4%;
+    margin-top: 0%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 15px #00dfc0;
+    font-size: 44pt;
+    background: #112133;
+}
+
+#admin-button {
+    margin: auto;
+    margin-top: 0%;
+}
+
+#h2-with-admin {
+    padding-left: 11%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#h2-with-admin:hover {
+    font-size: 42pt;
+}
+
+#form-wrapper {
+    padding:2% 0%;
+}
+
+#form-body{
+    opacity: 90%;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: auto;
+    padding: 5% 5%;
+    width: 35%;
+    background: rgba(198, 193, 193, 0.25);
+    box-shadow: 1px 1px 50px rgba(255, 255, 255, .75);
+    -webkit-transition: 0.5s;
+    border: 0.2px rgb(128, 127, 127) solid;
+    transition: 0.5s;
+    backdrop-filter: blur(50px);
+}
+
+#form-body:hover {
+    transform: scale(0.99);
+}
+
+label{
+    color:#000000;
+    text-shadow: 1px 1px 5px rgb(90, 90, 90);
+    font-size: 11pt;
+    opacity: 0.7;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    margin: auto;
+    /* padding: 10%; */
+}
+
+label:hover{
+    opacity: 1;
+}
+
+label:active {
+    font-size: 10pt;
+}
+
+#input-heads{
+    color: #020074;
+    opacity: 70%;
+    text-shadow: 1px 1px 5px #00dfc0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14pt;
+    padding: 10px;
+    font-family: orbitron;
+}
+
+
+input::placeholder {
+    font-family: orbitron;
+    color: #000;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: uppercase;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Visual Helper in validation */
+.red::placeholder{
+    color:red;
+}
+
+.green::placeholder{
+    color:green;
+}
+
+.black::placeholder{
+    color:black;
+}
+
+input:hover, input:focus, input:active:focus {
+    color: #000000;
+    outline: none;
+    font-size: 11pt;
+    font-weight: bold;
+    font-family: Orbitron;
+    border-bottom: 1px solid #000000;
+}
+  
+input:hover::placeholder, input:focus::placeholder, input:active:focus::placeholder {
+    color: #000000;
+    position: relative;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+input {
+    opacity: 80%;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-family: Orbitron;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+    /* height: 5%; */
+}
+
+input[type = "text"] {
+    margin-top: 5px;
+    margin-right: 20px;
+    border-bottom: 3px solid #000000;
+    background: transparent;
+    width: 30%;
+    height: 60px;
+    padding-left: 10px;
+}
+
+input[type = "number"] {
+    margin-top: 5px;
+    margin-right: 20px;
+    border-bottom: 3px solid #000000;
+    background: transparent;
+    width: 30%;
+    height: 60px;
+    padding-left: 10px;
+}
+
+/* #div-name-contact {
+    display: inline-block;
+} */
+
+input#collegeName {
+    width: 50%;
+    
+}
+
+input#shift {
+    width: 20%;
+}
+
+input#fname, input#lname, input#email {
+    width: 42.3%;
+}
+
+div#events {
+    padding-top: 10px;
+    padding-left: 30px;
+    column-count: 2;
+    column-gap: 0%;
+    padding-top: 2%;
+    font-family: orbitron;
+}
+
+div#checkboxes {
+    padding: 4% 0;
+}
+
+div#checkbox {
+    padding: 1.5% 0;
+}
+
+div#sub-div {
+    text-align: center;
+    padding: 4% 40%;
+    padding-bottom: 0%;
+}
+  
+
+/* Submit button */
+button#sub, #admin-button {
+    font-family: electric;
+    border: none;
+    padding: 15px;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: 1.2em;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#admin-button {
+    padding: 10px;
+    margin-right: 5%;
+    font-size: 12pt;
+}
+
+button#sub:before, button#sub:after, #admin-button:before, #admin-button:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(45deg, #00afc0, #04afc0, #08afc0, #0aafc0, #0fafc0, #4fafc0, #8fafc0, #afafc0);
+}
+
+#admin-button:before, #admin-button:after {
+    background: linear-gradient(45deg, #00dfc0, #04dfc0, #08dfc0, #0adfc0, #0fdfc0, #4fdfc0, #8fdfc0, #afdfc0);
+}
+
+button#sub:before, #admin-button:before {
+    filter: blur(7px);
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+            animation: pulse 10s infinite ease;
+}
+
+button#sub:after, #admin-button:after {
+    filter: blur(0.3px);
+}
+  
+button#sub:hover:before, #admin-button:hover:before {
+    width: 115%;
+    height: 115%;
+}
+
+button#sub:active, #admin-button:active {
+    transform: scale(0.96);
+}
+
+/* post submit in index.html */
+
+#submitted {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 32.5%;
+    z-index: 10;
+    color: #000000;
+    font-weight: lighter;
+    font-size: 12pt;
+    background: linear-gradient(45deg, #949397, #e5e3e7); 
+    border-radius: 10px;
+    margin: auto;
+    padding: 3%;
+    width: 30%;
+    box-shadow: 2px 2px 30px rgb(200, 201, 205);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    backdrop-filter: blur(10px);
+    opacity: 90%;
+}
+
+#submitted:hover {
+    transform: scale(1.02);
+}
+
+#h3-submitted {
+    text-shadow: 1px 1px 10px rgb(91, 119, 202);
+}
+  
+
+/* Login page */
+div#login{
+    padding: 50px 40px;
+    width: 17%;
+    margin-left: 37%;
+    margin-top: 10%;
+    font-size: 14pt;
+    border-radius: 5px;
+    background: rgba(198, 193, 193, 0.25);
+    box-shadow: 1px 1px 15px #ffffff;
+    border: 1px solid rgb(96, 96, 96);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+}
+
+div#login:hover {
+    transform: scale(0.99);
+}
+
+label#uname{
+    font-size: 15pt;
+}
+
+label#psw{
+    font-size: 15pt;
+}
+
+div#log-sub{
+    text-align: center;
+}
+
+div#psw{
+    margin: 3% 12%;
+    padding: 5%;
+}
+
+div#login-form {
+    background: #fff;
+}
+
+input#psw::placeholder, input#uname::placeholder {
+    /* font-weight: bold; */
+    color: #050505;
+    font-size: 11pt;
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: uppercase;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input#psw:hover, input#psw:focus, input#psw:active:focus, input#uname:hover, input#uname:focus, input#uname:active:focus {
+    color: #000000;
+    outline: none;
+    border-bottom: 3px solid #000000;
+}
+  
+input#psw:hover::placeholder, input#psw:focus::placeholder, input#psw:active:focus::placeholder, 
+input#uname:hover::placeholder, input#uname:focus::placeholder, input#uname:active:focus::placeholder {
+    color: #000000;
+    position: relative;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+input#psw, input#uname {
+    opacity: 70%;
+    font-size: auto;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+    border-bottom: 3px solid #000000;
+    background: transparent;
+    width: 95%;
+    height: 60px;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+
+div#uname{
+    margin: 3% 12%;
+   
+}
+
+h2#db-table{
+    text-align: center;
+}
+
+/* admin.html go-back and adminLogin.html log-sub  */
+
+button#log-sub, #go-back {
+    border: none;
+    padding: 13px;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: 1.2em;
+    font-size: 16pt;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+#go-back {
+    padding: 8px;
+    font-size: 12pt;
+}
+
+button#log-sub:before, button#log-sub:after, #go-back:before, #go-back:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(45deg, #ff889b, #bf889b, #bf8a9b, #bf8f9b, #bf7f9b, #bf6f9b, #bf5f9b, #418491);
+}
+
+#go-back:before, #go-back:after {
+    background: linear-gradient(45deg, #00dfc0, #04dfc0, #08dfc0, #0adfc0, #0fdfc0, #4fdfc0, #8fdfc0, #afdfc0);
+}
+
+button#log-sub:before, #go-back:before {
+    filter: blur(7px);
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+            animation: pulse 10s infinite ease;
+}
+
+button#log-sub:after, #go-back:after {
+    filter: blur(0.3px);
+}
+  
+button#log-sub:hover:before, #go-back:hover:before {
+    width: 115%;
+    height: 115%;
+}
+
+button#log-sub:active, #admin-button:active {
+    transform: scale(0.96);
+}
+
+/* admin.html */
+
+#go-back{
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+table, tr, th, td{
+    text-transform: initial;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    background: beige;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgb(216, 214, 211);
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 100%; 
+}
+
+thead{
+    white-space: nowrap;
+}
+
+h2#db-table{
+    text-align: center;
+    color:#1d2627;
+    text-shadow: 1px 1px 15px #00dfc0;
+    font-size: 13pt;
+    font-size: 22pt;
+}
+
+div#db-table{
+    font-family: sans-serif;
+    margin-left: 3%;
+    margin-right: 4.5%;
+    margin-top: 4%;
+    padding: 2%;
+    padding-top: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #ffffff;
+    border: 1px solid rgb(96, 96, 96);
+    background-color: rgba(198, 193, 193, 0.25);
+    backdrop-filter: blur(10px);
+    min-width: 1050px;
+}
+
+button.delete-row-btn{
+    border-radius: 30em;
+    border-width: 0px;
+    font-size: 18pt;
+    background-color: red;
+    color: white;
+}
+
+
+/* Smartphones */
+@media only screen and (max-width : 1090px) {
+    /* Styles */
+
+    body {
+        backdrop-filter: blur(5px);
+        background-position: center;
+    }
+
+    h2#SpectraReg{
+        font-size: 64pt;
+        padding: 5% 3%;
+    }
+
+    #h2-with-admin {
+        margin-right: 10%;
+    }
+
+    #h2-with-admin:hover {
+        font-size: 62pt;
+    }
+
+    #admin-button {
+        margin-top: 12%;
+        margin-left: 15%;
+    }
+
+    #form-body {
+        margin-top: 10%;
+        width: 75%;
+        padding-left: 10%;
+        padding-bottom: 15%;
+    }
+    
+    input {
+        font-size: 21pt;
+    }
+
+    input:hover, input:focus, input:active:focus {
+        font-size: 21pt;
+    }
+
+    input::placeholder{
+        font-size: 22pt;
+        padding: 5% 0%;
+    }
+
+    input:hover::placeholder, input:focus::placeholder, input:active:focus::placeholder {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    
+    #name {
+        width: 40%;
+        margin-top: 8%;
+        height: 100px;
+    }
+    
+    #shift {
+        width: 15%;
+        height: 100px;
+    }
+    
+    #collegeName {
+        margin-top: 13%;
+        height: 100px;
+    }
+    
+    #contact {
+        width: 35%;
+        margin-left: 10%;
+        height: 100px;
+    }
+    
+    div#events {
+        padding-top: 10px;
+        padding-left: 15%;
+        column-count: 1;
+        column-gap: 0%;
+        padding-top: 4%;
+        font-family: orbitron;
+    }
+    
+    #input-heads {
+        font-size: 26pt;
+    }
+    
+    #checkboxes {
+        margin-top: 10%;
+    }
+    
+    #checkbox {
+        margin: 5% 0%;
+    }
+
+    input[type="checkbox"] {
+        width: 21px; 
+        height: 21px; 
+        cursor: pointer;
+        border-width: 50px;
+        box-shadow: 1px 1px 5px #000000;
+        margin-right: 3%;
+        margin-top: 1%;
+    }
+    
+    label {
+        font-size: 24pt;
+    }
+
+    label:active {
+        font-size: 22pt;
+    }
+    
+    button#sub {
+        padding: 5%;
+        font-size: 26pt;
+    }
+
+    #admin-button {
+        padding: 1.5%;
+        font-size: 18pt;
+    }
+
+    div#sub-div {
+        padding: 11%;
+    }
+
+    #submitted {
+        width: 50%;
+        text-align: center;
+        padding: 10% 10%;
+        font-size: 29pt;
+        margin-left: -17.5%;
+    }
+
+    div#login {
+        width: 35%;
+        margin: 70% 15%;
+        padding: 15% 20%;
+        font-size: 24pt;
+    }
+
+    input#psw::placeholder, input#uname::placeholder {
+        font-size: 20pt;
+    }
+
+    button#log-sub {
+        margin: 10% 0%;
+        font-size: 26pt;
+    }
+
+    #go-back {
+        margin-left: 75%;
+        margin-top: 5%;
+        font-size: 26pt;
+        padding: 1% 3%;
+    }
+
+    input#uname {
+        /* height: px; */
+        padding: 5% auto;
+    }
+
+    div#db-table {
+        margin: 10% 2%;
+        min-width: 80%; 
+        padding: 2% 1%;
+        height: 85vh;
+    }
+}

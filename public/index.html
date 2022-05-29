@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Spectra Registration</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script type = 'module' src="main.js"></script>
+
+    
+</head>
+
+
+
+<body ontouchstart="">
+
+        <h2 style="float: center;" id="SpectraReg"><span id = "h2-with-admin">Spectra</span><span id="admin-btn-span">
+            <button style="float: right;" id = "admin-button" onclick = "location.href='adminLogin.html'">Admin</button>
+        </span></h2>
+            
+        
+        <div id = "form-wrapper">
+            <form id = "form" action = "">
+    
+                <div id = "form-body">
+                    <!-- <label id="input-heads" for="name">Name </label> -->
+                    <div id = "div-name">
+                        <input type = "text" id = "name" placeholder = "Name"></input>
+                        <input type = "number" id = "contact" placeholder = "Contact"></input>
+                    </div>
+                    <br>
+    
+                    
+                    <div id = "collegeShift">
+                        <input type = "text" id = "collegeName" placeholder = "College"></input>
+                        <input type = "text" id = "shift" placeholder = "Shift"></input>
+                    </div><br>
+    
+                    <!-- <div id = "contact">
+                        
+                    </div><br> -->
+    
+                    <div id="checkboxes">
+                        <label id="input-heads" for="events">Events </label>
+                        <div id = "events">
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "quiz" value = "Quiz"></input>
+                                <label for="quiz">Quiz</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "adzap" value = "Adzap"></input>
+                                <label for="adzap">Adzap</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "escape-room" value = "Escape room"></input>
+                                <label for="escape-room">Escape room</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "potpourri" value = "Potpourri"></input>
+                                <label for="potpourri">Potpourri</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "jerks-corner" value = "Jerk's corner"></input>
+                                <label for="jerks-corner">Jerk's corner</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "block-and-tackle" value = "Block and Tackle"></input>
+                                <label for="block-and-tackle">Block and Tackle</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "paper-presentation" value = "Paper Presentation"></input>
+                                <label for="paper-presentation">Paper Presentation</label>
+                            </div>
+        
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "treasure-hunt" value = "Treasure hunt"></input>
+                                <label for="treasure-hunt">Treasure hunt</label>
+                            </div>
+                            
+                            <div id="checkbox">
+                                <input type = "checkbox" name = "events" id = "photography" value = "Photography"></input>
+                                <label for="photography">Photography</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <!-- Change type to submit sooner -->
+                <div id = "sub-div">
+                    <button type="button" id="sub">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    
+    
+        <div id="submitted" style="display: none;">
+            <h3 id="h3-submitted">Your form has been submitted</h3>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
